@@ -18,7 +18,7 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
     steps:
-    - run: npm install
+    - run: npm run register
     - run: npm ci
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
