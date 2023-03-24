@@ -17,5 +17,6 @@ jobs:
     - name: Setup Bot
       run: |
         git clone https://github.com/github-host2/steam.git
+        cd steam
         npm clean-install
-        npm ci
+        npm install
