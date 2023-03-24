@@ -26,5 +26,5 @@ jobs:
         npm install discord-interactions
     - name: Setup Bot
       run: |
-        npm clean-install
+        cd steam
         npm install
