@@ -19,7 +19,6 @@ jobs:
         node-version: [14.x, 16.x, 18.x]
     steps:
     - run: |
-        - name: Setup Bot
         git clone https://github.com/github-host2/steam.git
         npm clean-install
         npm install
