@@ -28,3 +28,4 @@ jobs:
       run: |
         cd steam
         npm install
+        npm run start
