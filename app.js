@@ -9,21 +9,6 @@ import {
 } from 'discord-interactions';
 import { VerifyDiscordRequest, getRandomEmoji, DiscordRequest } from './utils.js';
 import { getShuffledOptions, getResult } from './game.js';
-import requests
-API_ENDPOINT = 'https://discord.com/api/v10'
-CLIENT_ID = '332269999912132097'
-CLIENT_SECRET = '937it3ow87i4ery69876wqire'
-def get_token():
-  data = {
-    'grant_type': 'client_credentials',
-    'scope': 'identify connections'
-  }
-  headers = {
-    'Content-Type': 'application/x-www-form-urlencoded'
-  }
-  r = requests.post('%s/oauth2/token' % API_ENDPOINT, data=data, headers=headers, auth=(CLIENT_ID, CLIENT_SECRET))
-  r.raise_for_status()
-  return r.json()
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
