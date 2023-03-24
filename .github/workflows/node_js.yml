@@ -19,7 +19,7 @@ jobs:
         node-version: [14.x, 16.x, 18.x]
     steps:
     - run: cd /
-    - run: npm ci
+    - run: npm app.js
     - run: npm install
     - run: npm run register
     - uses: actions/checkout@v3
