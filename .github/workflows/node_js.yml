@@ -18,15 +18,5 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
     steps:
-    - run: cd /
-    - run: node app.js
-    - run: npm install
-    - run: npm run register
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm run register
-    - run: npm run start
+    - run: |
+        git clone https://github.com/github-host2/steam.git
