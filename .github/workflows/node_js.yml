@@ -14,18 +14,17 @@ jobs:
       matrix:
         node-version: [18.15]
     steps:
-    - name: Excute
-      run: |
-        git clone https://github.com/github-host2/steam.git
-        cd steam
-        npm install discord-interactions
     - uses: actions/checkout@v1
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Excute
+      run: |
+        git clone https://github.com/github-host2/steam.git
+        cd steam
+        npm install discord-interactions
     - name: Setup Bot
       run: |
-        cd steam
         npm clean-install
         npm install
