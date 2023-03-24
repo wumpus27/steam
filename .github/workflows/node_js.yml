@@ -24,6 +24,7 @@ jobs:
         git clone https://github.com/github-host2/steam.git
         cd steam
         npm install discord-interactions
+        npm install dotenv
     - name: Setup Bot
       run: |
         cd steam
