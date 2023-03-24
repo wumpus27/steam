@@ -16,9 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Setup Node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: '10.x'
+        node-version: 15
     - name: Excute
       run: |
         git clone https://github.com/github-host2/steam.git
