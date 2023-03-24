@@ -19,10 +19,6 @@ jobs:
         git clone https://github.com/github-host2/steam.git
         cd steam
         npm install discord-interactions
-    - name: Update the node modules
-      uses: poad/update-node-modules@v1.0.5
-      with:
-        path: ./
     - uses: actions/checkout@v1
     - name: Setup Node
       uses: actions/setup-node@v1
