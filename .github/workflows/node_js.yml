@@ -3,8 +3,10 @@
 
 name: Node.js
 on:
-  schedule:
-    - cron: '0 0 15 * *'
+   push:
+     branches: [ "master" ]
+   pull_request:
+    branches: [ "master" ]
 jobs:
   build:
     runs-on: ubuntu-latest
