@@ -85,7 +85,7 @@
 
 
     // blockly code
-    await s4d.client.login('.').catch((e) => {
+    await s4d.client.login('MTEyMjIzMDk5ODUzMzQyNzMxMg.GkAK3a.V1iKIX2E-oJTzGFJSVgTIKZsQ0mEUzLIKmCgmY').catch((e) => {
         const tokenInvalid = true;
         const tokenError = e;
         if (e.toString().toLowerCase().includes("token")) {
